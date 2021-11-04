@@ -34,7 +34,7 @@ body {
 }
 main {
     background-color:#ddd;
-    background-image:url(images/wrinkled-white-paper-background.jpg);
+    background-image:url(../images/wrinkled-white-paper-background.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     border:1px solid #333;
@@ -58,22 +58,97 @@ h1 {
     text-transform: uppercase;
     font-size:6rem;
     margin: 0;
-    letter-spacing: .5rem;
     color:darkred;
+    letter-spacing: .5rem;
     text-shadow:.09375rem .09375rem .09375rem #000;
     font-family:'Alfa Slab One', Garamond, serif;
     text-align:center;
 }
 
+h2 {
+    text-transform: uppercase;
+    margin: 0;
+    color:darkred;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
+}
 
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+    color:darkred;
+    font-size: 2rem;
+    font-weight: normal;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
+    
+}
+
+h4 {
+    text-transform: uppercase;
+    margin: 0;
+    color:darkred;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 1.125rem;
+    font-weight: normal;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
+}
+
+h5{
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+
+}
+h4>span {
+   padding: 0 0.5rem; 
+}
 /* Section & Paragraph */
 
+section{
+    margin-top: 0.5rem;
+}
 
+p{
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: 90%;
+    text-align: left;
+}
 
 /* Image & Figure */
 
+img{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+figure{
+    margin-bottom: 2rem;
+}
+
+figcaption{
+    padding-top: 0.5rem;
+    text-align: right;
+}
 
 
 /* Footer */
 
-
+footer{
+    padding: 1rem;
+    border-top: 2rem solid #333;
+}
