@@ -78,19 +78,18 @@ header, footer {
 
 
 /* Imported Typfaces */
-
 @font-face {
     font-family: Montserrat;
-    src: url(../fonts/Montserrat.ttf);
-    font-style:normal;
-    font-weight:normal;
+    src: url(../fonts/montserrat-regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: Josefinslab;
-    src: url(../fonts/josefinslab-regular.ttf);
-    font-style:normal;
-    font-weight:normal;
+    src: url(../fonts/josefinslab-regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 
@@ -98,37 +97,37 @@ header, footer {
 /* Typography Styles */
 
 html {
-    font-family: Montserrat, sans-serif;
+   font-family: Montserrat, Arial, sans-serif;
 }
 
 h1 {
-    font-family: Josefinslab, serif;
+    font-family: Josefinslab, Georgia, serif;
     font-size: 3.75rem;
-    margin: 3rem;
+    margin: 1.125rem;
     letter-spacing: 0.125rem;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Josefinslab', serif;
+    font-family: Josefinslab, Georgia, serif;
     font-size: 1.5rem;
 }
 
-h2 + p /* Additionally, style the paragraphs that appear after a level 2 heading with an text indent of 24px, expressed in rem units.
-
-    Style the figcaption with a font size of 12px and a bottom margin of 32px, both expressed in rem units */
+h2 + p {
+    text-indent: 1.5rem;
+}
 
 p {
-    font-family: 'Montrserrat',sans-serif;
+    font-family: Montrserrat, Arial, sans-serif;
     font-size: 0.75rem;
     letter-spacing: 0.03125rem;
-    word-spacing: 0.125rem;
 }
 
 li {
+    font-family: Montrserrat, Arial, sans-serif;
     font-size: 0.75rem;
     letter-spacing: 0.03125rem;
-    word-spacing: 0.125rem;
+
 }
 
 figcaption {
@@ -141,45 +140,77 @@ figcaption {
 
 /* Link Styling */
 
-a {}
+a {
+    outline: none;
+}
 
 a:link,
-a:visited {}
+a:visited {
+    color:#33658A
+}
 
 a:focus,
-a:hover {}
+a:hover {
+    text-decoration: none;
+}
 
 
 
 
 /* List Styling */
 
-ul {}
+ul {
+    margin: 1rem 0;
+    list-style-type: square;
+}
 
-ol {}
+ol {
+    margin: 1rem 0;
+    list-style-type: lower-alpha;
+}
 
-.long-list a:hover {}
+.long-list a:hover {
+    text-transform: uppercase;
+}
 
 
 
 
 /* Navigation Menu */
 
-nav {}
+nav {
+    padding-left: 0;
+    margin-top: 0.25rem;
+}
 
-nav a {}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    border: 0.0625rem solid #33658A;
+}
 
 nav a:focus,
-nav a:hover {}
+nav a:hover {
+    color: #fff;
+    background-color: #33658A;
+}
 
-nav a:active {}
-
-
+nav a:active {
+    color: fff;
+    background-color: black;
+}
 
 
 /* Footer Styles */
 
-footer {}
+footer {
+    text-align: center;
+}
 
 
 
