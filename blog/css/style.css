@@ -115,6 +115,27 @@ h1 {
     box-shadow: 5px 5px 4px grey;
 }
 
+button {
+    font-family: Ultra;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #732F2F;
+    color: #D9D9D9;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    box-shadow: 5px 5px 4px grey;
+}
+
+.expand{
+    font-size: 0.3rem;
+}
+
+
+
 /* Layout */
 
 .main-section {
@@ -124,6 +145,7 @@ h1 {
 }
 header {
     padding: 0.5rem 0rem;
+    text-align: center;
 }
 
 article {
@@ -134,11 +156,20 @@ article {
 aside {
     grid-column: 2 / 3;
     grid-row: 1;
+    border-left: 1px solid #28234b;
+    padding-left: 1.5rem;
 }
 
-.subsection {
-    display:flex;
+aside p {
+    border-bottom: 1px solid #28234b;
+    padding-bottom: 1.75rem;
 }
+
+.subsection{
+    display: flex;
+    padding: 3rem 0rem;
+}
+
 
 /* Images and Figures */
 
@@ -165,6 +196,14 @@ figure {
     padding: 0.5rem 0rem;
 } 
 
+.copyright {
+    float: left;
+}
+
+.cites {
+    float: right;
+}
+
 .expand {
     height: 0.0325rem;
     width: 0325rem;
@@ -173,6 +212,7 @@ figure {
 
 a {
     outline: none;
+    text-decoration: none;
 }
 
 a:link,
@@ -180,7 +220,34 @@ a:visited {
     color:#33658A
 }
 
-a:focus,
 a:hover {
-    text-decoration: none;
+    color: #732F2F;
+    transform: rotate(3deg);
 }
+
+nav a:hover {
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+a:focus {
+    color: #732F2F;
+    text-decoration: line-through;
+    transform: rotate(3deg);
+    text-transform: uppercase;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    font-family: Lato, Arial, sans-serif;
+    color: #28234b;
+}
+
+nav {
+    border-top: 1px solid #28234b;
+    border-bottom: 1px solid #28234b;
+}
+
+
