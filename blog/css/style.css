@@ -85,7 +85,7 @@ body {
 }
 /* Typography */
 
-p {
+p, time {
     font-family: Roboto, Helvetica, sans-serif;
 }
 
